@@ -1,0 +1,48 @@
+.main {
+    display: flex;
+    margin-top: 50px;
+    padding-top: 50px;
+    align-items: center;
+    flex-direction: column;
+  }
+  .post {
+    width: 500px;
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    padding: 0 20px;
+    background-color: rgb(197, 109, 109);
+  }
+  .post img {
+    width: 100%;
+  }
+  .post h1 {
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+  }
+  .date{
+    float: right;
+    margin-bottom: 20px;
+    color: white;
+  }
+  .paginator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .paginator div {
+    margin: 25px;
+  }
+  .paginator .active {
+    cursor: pointer;
+  }
+  .paginator .disabled {
+    cursor: not-allowed;
+    color: rgb(179, 179, 179);
+  }
+  @media screen and (max-width: 480px) {
+    .post{
+      width: 100%;
+    }
+  }
